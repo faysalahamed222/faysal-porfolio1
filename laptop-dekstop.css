@@ -1,0 +1,119 @@
+/* for laptop+deksto */
+/* header design start from hrere */
+
+
+.navbar{
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr;
+}
+.navbar-logo{
+    padding-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    
+   
+    
+}
+
+
+.navbar-heading{
+display: flex;
+align-items: center;
+justify-content: center;
+
+
+
+
+}
+.navbar-menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+    
+}
+.navbar-menu a{
+    background-color: transparent;
+    font-size: 1.2rem;
+
+}
+
+
+
+/* header design ends hrere */
+/* home design starts here */
+#home{
+    display: grid;
+    grid-template-columns:1fr 2fr;
+    grid-template-areas:'img desc '
+    'img contract';
+    align-items: center;
+    justify-content: center;
+    
+    padding-bottom: 25px;
+    margin-top:123px;
+    
+   
+}
+.home-profile-image{
+    grid-area: img;
+    text-align: right;
+    
+    
+   
+}
+.home-profile-image img{
+    height:350px;
+    width:350px;
+   
+
+}
+.home-desc{
+    grid-area: desc;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    
+    text-align: left;
+    
+    
+  
+
+
+}
+.home-desc p{
+    margin: 0;
+    text-align: left;
+}
+
+
+
+.home-contact{
+    grid-area:contract;
+    text-align: center;
+    
+    flex-direction: row;
+    justify-content:flex-start;
+     
+}
+
+/* home design ends here */
+/* about me strats here */
+#about-me{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+  grid-template-areas:
+  'aboutme-intro education';
+  column-gap: 20px;
+}
+.aboutme-intro{
+    grid-area: aboutme-intro;
+}
+.education{
+    grid-area: education;
+    margin-top:0;
+}
+
+
+/* about me ends here */

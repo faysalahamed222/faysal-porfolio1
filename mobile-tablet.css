@@ -1,0 +1,273 @@
+
+*{
+    box-sizing: border-box;
+     font-family: "Fira Sans", sans-serif;
+
+}
+body{
+    margin:0;
+    min-height:100vh;
+    display: grid;
+    grid-template-areas:
+    'h'
+    'm'
+    'f';
+    grid-template-rows: min-content 1fr min-content;
+}
+
+header{
+
+    grid-area:h;
+    
+    
+   
+    
+}
+
+
+main{
+    grid-area:m;
+   
+  
+    
+}
+footer{
+    grid-area:f;
+    background-color: black;
+
+}
+
+/* for mobile+tablet */
+
+
+
+/* header degin satrts form here */
+
+.navbar{
+    background-color:#7c3aed;
+    text-align: center;
+    padding:1% 7%;
+    position: fixed;
+    left:0;
+    right:0;
+    z-index:2;
+
+
+    
+}
+
+.navbar-logo{
+    padding-top:20px;
+}
+
+ .navbar-logo img{
+    height:50px;
+    width:50px;
+  
+}
+
+  
+
+.navbar-heading h1{
+    color:white;
+    font-size:2.5rem;
+   
+
+}
+.navbar-menu{
+  
+    display: flex;
+    flex-direction:column;
+    gap:5px;
+    
+}
+
+.navbar-menu a{
+    color:white;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #1E293B;                                       
+    border-radius: 10px;
+    padding:10px;
+    transition:background-color 0.3s,color 0.3s;
+    font-size:1rem;
+    
+
+}
+.navbar-menu a:hover{
+    background-color:#38BDF8;
+    color:#0F172A;
+   
+}
+
+
+
+/* header degin  ends  here */
+/* home design starts here */
+
+
+
+#home{
+
+    text-align: center;
+background-color:#f1f5f9;
+padding:25px 25px;
+margin-top:335px;
+
+}
+
+.home-profile-image img{
+    height:200px;
+    width:200px;
+   
+   
+    background-color: transparent;
+
+}
+.home-desc h1{
+    margin:0;
+    margin-top:5px;
+    color: #0f172a;
+   
+
+}
+.home-desc p{
+    color:#475569;
+    width:80%;
+    margin:10px auto;
+    font-size:1.1rem;
+    text-align:center;
+    
+
+}
+.home-contact{
+    display: flex;
+    flex-direction:column;
+gap:10px;
+
+justify-content: center;
+align-items: center;
+margin-top:10px;
+
+}
+.home-contact .btn{
+    text-decoration: none;
+   background-color:#2563eb;
+color:white;
+
+display: inline-block;
+width:130px;
+padding:10px 0;
+border-radius:10px;
+font-weight:bold;
+transition:background-color 0.3s,box-shadow 0.3s, transform 0.3s;
+ box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+
+
+
+}
+.home-contact .btn:hover{
+     background-color:#1e293b;
+       box-shadow: 0 8px 20px  rgba(0, 0, 0, 0.22);
+       transform: translateY(-2px);
+}
+
+/* home design ends here */
+/* about me design starts here */
+
+#about-me{
+    padding:3% 2%;
+    background-color: #ffffff;;
+}
+.aboutme-intro{
+    text-align: center;
+      background-color: #e2e8f0;
+      padding:10px;
+        box-shadow:0px 2px 4px 2px rgb(0, 0, 0,.5);  
+      transition: box-shadow 0.3s;
+    }
+    .aboutme-intro:hover{
+        box-shadow:0px 4px 8px 5px rgb(0, 0, 0,1);
+
+    }
+
+
+.aboutme-intro-icon img{
+    height:100px;
+    width:100px;
+  
+    border:3px solid #7c3aed;
+    border-radius: 50%;
+     padding:10px;
+    
+
+
+}
+.aboutme-intro-title{
+      background-color: #25272b;
+    color: white;
+
+}
+
+.aboutme-intro-desc p{
+    text-align: justify;
+    font-size: 1.1rem;
+
+
+
+}
+.aboutme-intro-desc a{
+   color:black;
+   text-decoration: none;
+}
+hr{
+    border:2px solid black;
+    border-bottom: none;
+}
+
+
+.education{
+    text-align: left;
+      background-color: #e2e8f0;
+      padding:10px;
+        box-shadow:0px 2px 4px 2px rgb(0, 0, 0,.5);  
+      transition: box-shadow 0.3s;
+      margin-top:10px;
+    }
+    .education:hover{
+        box-shadow:0px 4px 8px 5px rgb(0, 0, 0,1);
+
+    }
+
+
+.education-icon img{
+    height:100px;
+    width:100px;
+    display: block;
+    margin:0 auto;
+  
+    border:3px solid #7c3aed;
+    border-radius: 50%;
+     padding:10px;
+    
+
+
+}
+.education-title{
+      background-color: #25272b;
+    color: white;
+    text-align: center;
+
+}
+
+.education-desc p{
+    text-align: justify;
+    font-size: 1.1rem;
+
+
+
+}
+
+
+
+/* about me design ends here *
