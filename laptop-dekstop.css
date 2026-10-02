@@ -1,119 +1,107 @@
-/* for laptop+deksto */
-/* header design start from hrere */
-
-
-.navbar{
+/* for laptop+desktop */
+.navbar {
     display: grid;
     grid-template-columns: 1fr 2fr 3fr;
+    align-items: center;
+    padding: 18px 5%;
 }
-.navbar-logo{
+
+.navbar-logo {
     padding-top: 0;
     display: flex;
     align-items: center;
-    justify-content:flex-start;
-    
-   
-    
+    justify-content: flex-start;
 }
 
-
-.navbar-heading{
-display: flex;
-align-items: center;
-justify-content: center;
-
-
-
-
+.navbar-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.navbar-menu{
+
+.navbar-menu {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content:center;
-    
+    justify-content: center;
+    gap: 12px;
+    margin-top: 0;
 }
-.navbar-menu a{
+
+.navbar-menu a {
     background-color: transparent;
-    font-size: 1.2rem;
-
+    font-size: 1rem;
+    padding: 10px 14px;
 }
 
-
-
-/* header design ends hrere */
-/* home design starts here */
-#home{
+#home {
     display: grid;
-    grid-template-columns:1fr 2fr;
-    grid-template-areas:'img desc '
-    'img contract';
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas:
+        'img desc'
+        'img contract';
     align-items: center;
     justify-content: center;
-    
-    padding-bottom: 25px;
-    margin-top:123px;
-    
-   
+    padding: 60px 5% 40px;
+    margin-top: 90px;
 }
-.home-profile-image{
+
+.home-profile-image {
     grid-area: img;
     text-align: right;
-    
-    
-   
 }
-.home-profile-image img{
-    height:350px;
-    width:350px;
-   
 
+.home-profile-image img {
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
 }
-.home-desc{
+
+.home-desc {
     grid-area: desc;
     display: flex;
     flex-direction: column;
-    gap:10px;
-    
+    gap: 10px;
     text-align: left;
-    
-    
-  
-
-
 }
-.home-desc p{
+
+.home-desc p {
     margin: 0;
     text-align: left;
+    width: 100%;
 }
 
-
-
-.home-contact{
-    grid-area:contract;
+.home-contact {
+    grid-area: contract;
     text-align: center;
-    
     flex-direction: row;
-    justify-content:flex-start;
-     
+    justify-content: flex-start;
+    margin-top: 18px;
 }
 
-/* home design ends here */
-/* about me strats here */
-#about-me{
+#about-me {
     display: grid;
-    grid-template-columns:1fr 1fr;
-  grid-template-areas:
-  'aboutme-intro education';
-  column-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        'aboutme-intro education';
+    column-gap: 24px;
+    align-items: start;
+    padding: 20px 5% 60px;
 }
-.aboutme-intro{
+
+.aboutme-intro {
     grid-area: aboutme-intro;
 }
-.education{
+
+.education {
     grid-area: education;
-    margin-top:0;
+    margin-top: 0;
 }
 
+.skills-grid {
+    grid-template-columns: repeat(3, minmax(180px, 1fr));
+}
 
-/* about me ends here */
+.footer-content {
+    max-width: 1000px;
+}
